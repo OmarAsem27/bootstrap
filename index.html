@@ -356,6 +356,57 @@
     </section>
 
 
+    <!-- contact form -->
+    <section id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get in touch</h2>
+                <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+            </div>
+
+            <!-- the grid layout to let the size changed in different screens -->
+            <div class="row justify-content-center my-5 ">
+                <div class="col-lg-6">
+                    <form action="">
+
+                        <label for="email" class="form-label">Email Address</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input type="email" name="" id="email" class="form-control"
+                                placeholder="e.g.omar@example.com">
+                        </div>
+
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" placeholder="e.g.Omar" id="name" class="form-control mb-4">
+
+                        <label for="subject" class="form-label"> What is your question about?</label>
+                        <div class="mb-4 input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill"></i>
+
+                            </span>
+                            <select class="form-select" id="subject">
+                                <option value="pricing" selected>Pricing query</option>
+                                <option value="contact"> Contact query</option>
+                                <option value="other">Other query</option>
+                            </select>
+                        </div>
+
+                        <div class="form-floating mb-4 mt-5">
+                            <textarea id="query" class="form-control" style="height: 140px;"> </textarea>
+                            <label for="query">Your query...</label>
+                        </div>
+
+                        <div class="text-center mb-4">
+                            <button type="submit" class="btn btn-secondary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
