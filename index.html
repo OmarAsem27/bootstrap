@@ -73,7 +73,11 @@
                     <a href="#pricing" class="btn btn-lg btn-secondary">Buy now </a>
                 </div>
                 <div class="col-md-5 d-md-block d-none text-center">
-                    <img class="img-fluid" src="/assets/inspiring.webp" alt="ebook cover">
+                    <!-- tooltip -->
+                    <span data-bs-toggle="tooltip" data-bs-placement="left"
+                        data-bs-title="Inspiring Musicians Book Cover">
+                        <img class="img-fluid" src="/assets/inspiring.webp" alt="ebook cover">
+                    </span>
                 </div>
             </div>
         </div>
@@ -367,6 +371,7 @@
             <!-- the grid layout to let the size changed in different screens -->
             <div class="row justify-content-center my-5 ">
                 <div class="col-lg-6">
+
                     <form action="">
 
                         <label for="email" class="form-label">Email Address</label>
@@ -376,6 +381,11 @@
                             </span>
                             <input type="email" name="" id="email" class="form-control"
                                 placeholder="e.g.omar@example.com">
+                            <!-- tooltip -->
+                            <span class="input-group-text" data-bs-toggle="tooltip" data-bs-placement="top"
+                                data-bs-title="Enter email address we can rely on">
+                                <i class="bi bi-question-circle text-muted"></i>
+                            </span>
                         </div>
 
                         <label for="name" class="form-label">Name</label>
@@ -385,7 +395,6 @@
                         <div class="mb-4 input-group">
                             <span class="input-group-text">
                                 <i class="bi bi-chat-right-dots-fill"></i>
-
                             </span>
                             <select class="form-select" id="subject">
                                 <option value="pricing" selected>Pricing query</option>
@@ -403,14 +412,30 @@
                             <button type="submit" class="btn btn-secondary">Submit</button>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
     </section>
 
+
+
+
+
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+
 
 </body>
 
