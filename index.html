@@ -419,8 +419,55 @@
     </section>
 
 
+    <!-- get updates / modal trigger -->
+    <section class="bg-light">
+        <div class="container ">
+            <div class="text-center">
+                <h2>Stay in the loop</h2>
+                <p class="lead">Get the latest updates as they happen...</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="text-muted my-4">
+                        Welcome to the official hub for my music book! Whether you're a passionate musician, a curious
+                        learner, or someone who simply loves the magic of melodies, this is the place for you. Stay
+                        connected and be the first to receive exciting updates, exclusive insights, and
+                        behind-the-scenes content about the book.
+                    </p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+                        Register for updates
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+
+    <!-- modal itself -->
+    <div id="reg-modal" class="modal fade" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Get the latest updates</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Get notified about new chapters, editions, or special releases, Enjoy bonus material, extended
+                        discussions, and insights that didn’t make it into the book, Discover practical techniques,
+                        music theory breakdowns, and creative exercises to enhance your skills.
+                    </p>
+                    <label for="modal-email" class="form-label">Your Email Address:</label>
+                    <input type="email" id="modal-email" class="form-control" placeholder="e.g.omar@example.com">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
