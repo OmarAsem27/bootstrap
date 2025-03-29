@@ -71,6 +71,9 @@
                     </h1>
                     <p class="text-muted lead my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <a href="#pricing" class="btn btn-lg btn-secondary">Buy now </a>
+                    <!-- open sidebar / offcanvas -->
+                    <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button"
+                        aria-controls="sidebar">Explore my other books</a>
                 </div>
                 <div class="col-md-5 d-md-block d-none text-center">
                     <!-- tooltip -->
@@ -470,7 +473,37 @@
     </div>
 
 
-
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" id="sidebar" tabindex="-1" arialabbeldby="sidebar-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebar-label"> My other books</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Music is a journey, and every book I write is a new chapter in that adventure! If you enjoyed this book,
+                take a look at my other works that dive deeper into the world of music, creativity, and artistry. Each
+                book is crafted to inspire, educate, and elevate your musical experience.
+            </p>
+            <div class="list-group">
+                <h5>Music Theory & Learning</h5>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">The Language of
+                    Music: Understanding the Art of Sound</a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Mastering Melody: A
+                    Guide to Music Theory and Composition
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Rhythm & Harmony:
+                    Unlocking the Secrets of Music
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">From Notes to
+                    Masterpiece: A Beginner’s Guide to Music Theory
+                </a>
+                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Scales & Chords
+                    Demystified: The Essential Music Guide
+                </a>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
